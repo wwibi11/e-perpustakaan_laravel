@@ -12,7 +12,7 @@ Sistem Informasi Perpustakaan berbasis Laravel.
 
 ## Teknologi
 - Laravel 13
-- PHP 8.4
+- PHP 8.3
 - MySQL/MariaDB
 - Bootstrap 5
 - Font Awesome
