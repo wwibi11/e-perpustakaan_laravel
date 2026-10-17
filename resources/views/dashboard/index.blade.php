@@ -22,22 +22,28 @@
             </p>
         </div>
         <!-- Action Shortcut Buttons -->
+       <!-- Action Shortcut Buttons -->
         <div class="flex flex-wrap items-center gap-2.5">
-            <button class="group flex items-center gap-2 h-10 px-4 rounded-lg bg-surface-container-lowest text-primary font-label-md text-label-md shadow-sm hover:bg-surface-container-low transition-all" type="button">
+            <!-- Tombol Pinjam Baru -->
+            <a href="{{ route('sirkulasi.index') }}" class="group flex items-center gap-2 h-10 px-4 rounded-lg bg-surface-container-lowest text-primary font-label-md text-label-md shadow-sm hover:bg-surface-container-low transition-all">
                 <span class="material-symbols-outlined text-[18px] text-primary group-hover:rotate-90 transition-transform">add_circle</span>
                 <span>+ Sirkulasi Pinjam Baru</span>
                 <kbd class="px-1.5 py-0.5 rounded bg-surface-container text-on-surface font-data-mono text-label-sm">F1</kbd>
-            </button>
-            <button class="group flex items-center gap-2 h-10 px-4 rounded-lg bg-surface-container-lowest/10 hover:bg-surface-container-lowest/20 text-on-primary font-label-md text-label-md backdrop-blur-sm transition-all" type="button">
+            </a>
+            
+            <!-- Tombol Pengembalian -->
+            <a href="{{ route('sirkulasi.index') }}" class="group flex items-center gap-2 h-10 px-4 rounded-lg bg-surface-container-lowest/10 hover:bg-surface-container-lowest/20 text-on-primary font-label-md text-label-md backdrop-blur-sm transition-all">
                 <span class="material-symbols-outlined text-[18px]">assignment_return</span>
                 <span>Terima Pengembalian Buku</span>
                 <kbd class="px-1.5 py-0.5 rounded bg-surface-container-lowest/20 text-on-primary font-data-mono text-label-sm">F2</kbd>
-            </button>
-            <button class="group flex items-center gap-2 h-10 px-3.5 rounded-lg bg-surface-container-lowest/10 hover:bg-surface-container-lowest/20 text-on-primary font-label-md text-label-md backdrop-blur-sm transition-all" type="button">
+            </a>
+            
+            <!-- Tombol Pencarian -->
+            <a href="{{ route('books.index') }}" class="group flex items-center gap-2 h-10 px-3.5 rounded-lg bg-surface-container-lowest/10 hover:bg-surface-container-lowest/20 text-on-primary font-label-md text-label-md backdrop-blur-sm transition-all">
                 <span class="material-symbols-outlined text-[18px]">search</span>
                 <span>Pencarian Buku</span>
                 <kbd class="px-1.5 py-0.5 rounded bg-surface-container-lowest/20 text-on-primary font-data-mono text-label-sm">F3</kbd>
-            </button>
+            </a>
         </div>
     </div>
     <!-- Subdued Decorative Element -->

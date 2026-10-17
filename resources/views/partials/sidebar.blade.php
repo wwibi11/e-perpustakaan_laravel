@@ -30,27 +30,27 @@
             <!-- KATEGORI: MANAJEMEN KOLEKSI -->
             <div class="text-[11px] font-bold text-outline uppercase tracking-wider px-3 pt-4 pb-1">Manajemen Koleksi</div>
 
-            <a href="#" class="flex items-center gap-x-3 px-3 py-2 rounded-lg transition-colors {{ request()->routeIs('books.*') ? 'bg-primary-container text-on-primary font-title-sm' : 'text-on-surface-variant hover:bg-surface-container hover:text-on-surface' }}">
+            <a href="{{ route('books.index') }}" class="flex items-center gap-x-3 px-3 py-2 rounded-lg transition-colors {{ request()->routeIs('books.*') ? 'bg-primary-container text-on-primary font-title-sm' : 'text-on-surface-variant hover:bg-surface-container hover:text-on-surface' }}">
                 <span class="material-symbols-outlined text-[20px]">menu_book</span>
                 <span class="font-body-md text-body-md">Katalog Buku</span>
             </a>
             
-            <a href="#" class="flex items-center gap-x-3 px-3 py-2 rounded-lg transition-colors {{ request()->routeIs('copies.*') ? 'bg-primary-container text-on-primary font-title-sm' : 'text-on-surface-variant hover:bg-surface-container hover:text-on-surface' }}">
+            <a href="{{ route('copies.index') }}" class="flex items-center gap-x-3 px-3 py-2 rounded-lg transition-colors {{ request()->routeIs('copies.*') ? 'bg-primary-container text-on-primary font-title-sm' : 'text-on-surface-variant hover:bg-surface-container hover:text-on-surface' }}">
                 <span class="material-symbols-outlined text-[20px]">barcode</span>
                 <span class="font-body-md text-body-md">Data Eksemplar</span>
             </a>
 
-            <a href="#" class="flex items-center gap-x-3 px-3 py-2 rounded-lg transition-colors {{ request()->routeIs('categories.*') ? 'bg-primary-container text-on-primary font-title-sm' : 'text-on-surface-variant hover:bg-surface-container hover:text-on-surface' }}">
+            <a href="{{ route('categories.index') }}" class="flex items-center gap-x-3 px-3 py-2 rounded-lg transition-colors {{ request()->routeIs('categories.*') ? 'bg-primary-container text-on-primary font-title-sm' : 'text-on-surface-variant hover:bg-surface-container hover:text-on-surface' }}">
                 <span class="material-symbols-outlined text-[20px]">category</span>
                 <span class="font-body-md text-body-md">Kategori Buku</span>
             </a>
 
-            <!-- Menu Baru: Pengarang & Penerbit -->
-            <a href="#" class="flex items-center gap-x-3 px-3 py-2 rounded-lg transition-colors {{ request()->routeIs('authors.*') ? 'bg-primary-container text-on-primary font-title-sm' : 'text-on-surface-variant hover:bg-surface-container hover:text-on-surface' }}">
+            <a href="{{ route('authors.index') }}" class="flex items-center gap-x-3 px-3 py-2 rounded-lg transition-colors {{ request()->routeIs('authors.*') ? 'bg-primary-container text-on-primary font-title-sm' : 'text-on-surface-variant hover:bg-surface-container hover:text-on-surface' }}">
                 <span class="material-symbols-outlined text-[20px]">person_edit</span>
                 <span class="font-body-md text-body-md">Data Pengarang</span>
             </a>
-            <a href="#" class="flex items-center gap-x-3 px-3 py-2 rounded-lg transition-colors {{ request()->routeIs('publishers.*') ? 'bg-primary-container text-on-primary font-title-sm' : 'text-on-surface-variant hover:bg-surface-container hover:text-on-surface' }}">
+
+            <a href="{{ route('publishers.index') }}" class="flex items-center gap-x-3 px-3 py-2 rounded-lg transition-colors {{ request()->routeIs('publishers.*') ? 'bg-primary-container text-on-primary font-title-sm' : 'text-on-surface-variant hover:bg-surface-container hover:text-on-surface' }}">
                 <span class="material-symbols-outlined text-[20px]">apartment</span>
                 <span class="font-body-md text-body-md">Data Penerbit</span>
             </a>
@@ -58,18 +58,17 @@
             <!-- KATEGORI: TRANSAKSI & ANGGOTA -->
             <div class="text-[11px] font-bold text-outline uppercase tracking-wider px-3 pt-4 pb-1">Transaksi & Anggota</div>
 
-            <a href="#" class="flex items-center gap-x-3 px-3 py-2 rounded-lg transition-colors {{ request()->routeIs('members.*') ? 'bg-primary-container text-on-primary font-title-sm' : 'text-on-surface-variant hover:bg-surface-container hover:text-on-surface' }}">
+            <a href="{{ route('members.index') }}" class="flex items-center gap-x-3 px-3 py-2 rounded-lg transition-colors {{ request()->routeIs('members.*') ? 'bg-primary-container text-on-primary font-title-sm' : 'text-on-surface-variant hover:bg-surface-container hover:text-on-surface' }}">
                 <span class="material-symbols-outlined text-[20px]">group</span>
                 <span class="font-body-md text-body-md">Data Anggota</span>
             </a>
 
-            <!-- Menu Baru: Reservasi -->
-            <a href="#" class="flex items-center gap-x-3 px-3 py-2 rounded-lg transition-colors {{ request()->routeIs('reservations.*') ? 'bg-primary-container text-on-primary font-title-sm' : 'text-on-surface-variant hover:bg-surface-container hover:text-on-surface' }}">
+            <a href="{{ route('reservations.index') }}" class="flex items-center gap-x-3 px-3 py-2 rounded-lg transition-colors {{ request()->routeIs('reservations.*') ? 'bg-primary-container text-on-primary font-title-sm' : 'text-on-surface-variant hover:bg-surface-container hover:text-on-surface' }}">
                 <span class="material-symbols-outlined text-[20px]">bookmark_add</span>
                 <span class="font-body-md text-body-md">Reservasi Buku</span>
             </a>
 
-            <a href="#" class="flex items-center gap-x-3 px-3 py-2 rounded-lg transition-colors {{ request()->routeIs('fines.*') ? 'bg-primary-container text-on-primary font-title-sm' : 'text-on-surface-variant hover:bg-surface-container hover:text-on-surface' }}">
+            <a href="{{ route('fines.index') }}" class="flex items-center gap-x-3 px-3 py-2 rounded-lg transition-colors {{ request()->routeIs('fines.*') ? 'bg-primary-container text-on-primary font-title-sm' : 'text-on-surface-variant hover:bg-surface-container hover:text-on-surface' }}">
                 <span class="material-symbols-outlined text-[20px]">receipt_long</span>
                 <span class="font-body-md text-body-md">Denda & Tagihan</span>
             </a>
@@ -77,21 +76,19 @@
             <!-- KATEGORI: SISTEM -->
             <div class="text-[11px] font-bold text-outline uppercase tracking-wider px-3 pt-4 pb-1">Sistem</div>
 
-            <!-- Menu Baru: Log Aktivitas (Riwayat Barang) -->
-            <a href="#" class="flex items-center gap-x-3 px-3 py-2 rounded-lg transition-colors {{ request()->routeIs('history.*') ? 'bg-primary-container text-on-primary font-title-sm' : 'text-on-surface-variant hover:bg-surface-container hover:text-on-surface' }}">
+            <a href="{{ route('history.index') }}" class="flex items-center gap-x-3 px-3 py-2 rounded-lg transition-colors {{ request()->routeIs('history.*') ? 'bg-primary-container text-on-primary font-title-sm' : 'text-on-surface-variant hover:bg-surface-container hover:text-on-surface' }}">
                 <span class="material-symbols-outlined text-[20px]">history</span>
                 <span class="font-body-md text-body-md">Log Aktivitas</span>
             </a>
 
-            <!-- Manajemen Pengguna (Hanya untuk Admin) -->
-         
-            <a href="#" class="flex items-center gap-x-3 px-3 py-2 rounded-lg transition-colors {{ request()->routeIs('users.*') ? 'bg-primary-container text-on-primary font-title-sm' : 'text-on-surface-variant hover:bg-surface-container hover:text-on-surface' }}">
+            @if(auth()->check() && in_array(auth()->user()->role, ['super_admin', 'admin']))
+            <a href="{{ route('users.index') }}" class="flex items-center gap-x-3 px-3 py-2 rounded-lg transition-colors {{ request()->routeIs('users.*') ? 'bg-primary-container text-on-primary font-title-sm' : 'text-on-surface-variant hover:bg-surface-container hover:text-on-surface' }}">
                 <span class="material-symbols-outlined text-[20px]">manage_accounts</span>
                 <span class="font-body-md text-body-md">Manajemen Pengguna</span>
             </a>
-         
+            @endif
 
-            <a href="#" class="flex items-center gap-x-3 px-3 py-2 rounded-lg transition-colors {{ request()->routeIs('settings.*') ? 'bg-primary-container text-on-primary font-title-sm' : 'text-on-surface-variant hover:bg-surface-container hover:text-on-surface' }}">
+            <a href="{{ route('settings.index') }}" class="flex items-center gap-x-3 px-3 py-2 rounded-lg transition-colors {{ request()->routeIs('settings.*') ? 'bg-primary-container text-on-primary font-title-sm' : 'text-on-surface-variant hover:bg-surface-container hover:text-on-surface' }}">
                 <span class="material-symbols-outlined text-[20px]">settings</span>
                 <span class="font-body-md text-body-md">Pengaturan</span>
             </a>
